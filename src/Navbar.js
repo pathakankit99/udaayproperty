@@ -43,7 +43,12 @@ function Navbar({active}) {
                 </ul>
             </div>
             <div>
-                <button className="btn btn-blue flex items-center"> <FaEnvelope/> <span className="ml-2">Contact Us</span></button>
+                <div className="btn btn-blue flex items-center">
+                    <FaEnvelope/> 
+                    <span className="ml-2">                
+                        <Link href="/contact">Contact Us</Link>
+                    </span> 
+                </div>
             </div>
         </nav>
         <nav className="adminNavbar bg-white flex lg:hidden justify-between items-center p-4">
@@ -71,7 +76,12 @@ function Navbar({active}) {
                     <Link href="/about-us">About Us</Link>
                 </li>
                 <li className="p-4">
-                <button className="btn btn-blue flex items-center"> <FaEnvelope/> <span className="ml-2">Contact Us</span></button>
+                    <div className="btn btn-blue flex w-10/12 items-center">
+                        <FaEnvelope/> 
+                        <span className="ml-2">                
+                            <Link href="/contact">Contact Us</Link>
+                        </span> 
+                    </div>
                 </li>
                 <li className="p-4 flex">
                     <a className="pr-4" href="https://www.facebook.com/ennaarrealtors" target="_blank">
