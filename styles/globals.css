@@ -1,16 +1,107 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  transition: all 0.2s ease-in-out;
+}
+.btn {
+    @apply py-2 px-4 font-semibold rounded-lg shadow-md capitalize;
+  }
+.btn-green {
+    @apply text-white bg-green-500 hover:bg-green-700;
+  }
+
+.btn-blue {
+    @apply text-white bg-blue-500 hover:bg-blue-700;
+  }
+  .btn-outline-blue{
+    @apply border border-4 border-blue-500 text-blue-500 hover:text-white hover:bg-blue-500;
+  }
+
+  /* navbar css */
+.nav-item{
+ @apply py-2 px-4 text-xl;
+}
+.nav-item-hover{
+  @apply hover:underline;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.adminNavbar{
+  width: 100vw;
+  position: fixed;
+  z-index: 1000;
+}
+.sidemenu{
+  position: fixed;
+  padding-top: 120px;
+  min-height: 100vh;
+  transition: all 0.2s ease-in-out;
+  z-index: 900;
 }
 
-* {
-  box-sizing: border-box;
+.overlay{
+  position: fixed;
+  background: black;
+  opacity: 70%;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 899;
+  transition: none;
 }
+
+.mainContent{    
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 550px) {
+  .mainContent{    
+      padding-top: 100px;
+  }   
+}
+/* navbar css */
+/* Section1 */
+.each-slide{
+
+}
+.each-slide img{
+  object-fit: cover;
+  width: 100vw;
+  height: 70vh;
+}
+
+.icon{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 228, 196, 0.6);
+  z-index: 100;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-next{
+  right: 0;
+}
+
+.icon:hover{
+  background-color: white;
+  cursor: pointer;
+}
+/* Section1 */
+
+/* Section2 */
+.heading{
+  @apply text-3xl lg:text-5xl py-3;
+}
+
+.heading2{
+  @apply text-2xl lg:text-3xl py-3;
+}
+
+.para{
+  @apply text-lg py-6  text-justify lg:text-center;
+}
+/* Section2 */
