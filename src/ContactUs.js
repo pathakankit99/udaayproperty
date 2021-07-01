@@ -5,7 +5,9 @@ function ContactUs() {
                 <img className="object-cover w-full h-full" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80"/>
             </div>
             <div className="w-full lg:w-6/12 p-4 h-full lg:flex lg:flex-col justify-evenly">
-               <h1 className="heading py-4">Contact Us</h1>
+               <div>
+                <h1 className="heading py-4">Contact Us</h1>
+               </div>
                 <form>
                     <div className="mb-3 pt-0">
                         <label>Full Name <span>*</span></label>

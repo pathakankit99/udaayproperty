@@ -34,10 +34,10 @@ function Navbar({active}) {
                     <li className={"nav-item "+(active==="projects"?"text-blue-600 font-bold":"nav-item-hover")}>
                         <Link href="/projects">Projects</Link>
                     </li>
-                    <li className={"nav-item "+(active==="projects"?"text-blue-600 font-bold":"nav-item-hover")}>
+                    <li className={"nav-item "+(active==="gallery"?"text-blue-600 font-bold":"nav-item-hover")}>
                         <Link href="/gallery">Gallery</Link>
                     </li>
-                    <li className={"nav-item "+(active==="projects"?"text-blue-600 font-bold":"nav-item-hover")}>
+                    <li className={"nav-item "+(active==="aboutus"?"text-blue-600 font-bold":"nav-item-hover")}>
                         <Link href="/about-us">About Us</Link>
                     </li>
                 </ul>
@@ -69,10 +69,10 @@ function Navbar({active}) {
                 <li className={"nav-item "+(active==="projects"?"text-blue-600 font-bold bg-gray-200":"nav-item-hover")}>
                     <Link href="/projects">Projects</Link>
                 </li>
-                <li className={"nav-item "+(active==="projects"?"text-blue-600 font-bold bg-gray-200":"nav-item-hover")}>
+                <li className={"nav-item "+(active==="gallery"?"text-blue-600 font-bold bg-gray-200":"nav-item-hover")}>
                     <Link href="/gallery">Gallery</Link>
                 </li>
-                <li className={"nav-item "+(active==="projects"?"text-blue-600 font-bold bg-gray-200":"nav-item-hover")}>
+                <li className={"nav-item "+(active==="aboutus"?"text-blue-600 font-bold bg-gray-200":"nav-item-hover")}>
                     <Link href="/about-us">About Us</Link>
                 </li>
                 <li className="p-4">
