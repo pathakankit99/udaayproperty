@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import logo from "../public/images/logo.png"
 import Link from 'next/link'
+import ProjectMenu from './ProjectMenu'
 import {FaBars, FaFacebook, FaTwitter, FaEnvelope} from 'react-icons/fa'
 import {useState, useEffect} from 'react'
 function Navbar({active}) {
@@ -32,7 +33,9 @@ function Navbar({active}) {
                         <Link href="/">Home</Link>
                     </li>
                     <li className={"nav-item "+(active==="projects"?"text-blue-600 font-bold":"nav-item-hover")}>
-                        <Link href="/projects">Projects</Link>
+                        <Link href="/projects">
+                            <ProjectMenu/>
+                        </Link>
                     </li>
                     <li className={"nav-item "+(active==="gallery"?"text-blue-600 font-bold":"nav-item-hover")}>
                         <Link href="/gallery">Gallery</Link>
@@ -66,8 +69,17 @@ function Navbar({active}) {
                 <li className={"nav-item "+(active==="home"?"text-blue-600 font-bold bg-gray-200":"nav-item-hover")}>
                     <Link href="/">Home</Link>
                 </li>
-                <li className={"nav-item "+(active==="projects"?"text-blue-600 font-bold bg-gray-200":"nav-item-hover")}>
-                    <Link href="/projects">Projects</Link>
+                <li className={"nav-item "+(active==="projects"?"text-blue-600 font-bold bg-gray-200":"")}>
+                    <span className={""+(active==="projects"?"text-blue-600 font-bold bg-gray-200":"nav-item-hover")}>
+                        <Link href="/projects">Projects</Link>
+                    </span>
+                    <ul className="pl-4 text-sm pt-2">
+                        <li className="py-3 hover:underline">
+                            <Link href="/utsav-residential">
+                                Utsav Residential
+                            </Link>
+                        </li>
+                    </ul>
                 </li>
                 <li className={"nav-item "+(active==="gallery"?"text-blue-600 font-bold bg-gray-200":"nav-item-hover")}>
                     <Link href="/gallery">Gallery</Link>
