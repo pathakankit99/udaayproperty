@@ -46,12 +46,17 @@ function Navbar({active}) {
                 </ul>
             </div>
             <div>
-                <div className="btn btn-blue flex items-center">
+            <Link href="/contact" passHref>
+                <div className="btn btn-blue flex justify- pointeronhover items-center">
+                    <span className="transformIcon">
                     <FaEnvelope/> 
-                    <span className="ml-2">                
-                        <Link href="/contact">Contact Us</Link>
+                    </span>
+                    <span className="mx-2">                
+                        Contact Us
                     </span> 
+                    <span className="extraSpan"></span>
                 </div>
+                </Link>
             </div>
         </nav>
         <nav className="adminNavbar bg-white flex lg:hidden justify-between items-center p-4">

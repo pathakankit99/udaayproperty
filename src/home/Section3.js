@@ -1,13 +1,38 @@
+import Link from "next/link"
+import { FaArrowRight } from "react-icons/fa"
 function Section3() {
     return (
-        <section className="p-4 lg:px-16 text-center flex flex-col justify-center items-center">
-            <h2 className="heading2 font-bold">Latest Project</h2>
-            <img src="/images/utsav.jpg"/>
-            <h3 className="text-3xl py-3 ">Utsav Residential</h3>
-            <p className="para w-full lg:w-8/12">Reprehenderit veniam dolor ad duis cupidatat dolor enim fugiat pariatur quis occaecat qui. Cillum nulla velit qui deserunt mollit aliquip nisi sit adipisicing ex in do non excepteur. Officia Lorem sit laborum excepteur mollit laboris sunt cillum aute labore. Non nostrud sit ut ut nostrud do ut pariatur esse est cillum. Nulla et est esse pariatur amet. Proident reprehenderit ea labore aliqua aliquip ea voluptate esse proident. Consectetur dolore qui ut ullamco labore nostrud id.
-
-            Do labore minim culpa est irure duis tempor laborum est proident laborum proident duis. Duis non adipisicing dolor laborum cupidatat dolor. Sunt aliqua et do reprehenderit labore anim veniam esse aliquip. Consectetur velit dolore reprehenderit officia ea do laboris ex esse irure ipsum. Enim adipisicing eiusmod reprehenderit officia mollit. Ex qui sunt sunt laborum reprehenderit quis exercitation quis ut amet do fugiat amet elit.</p>
-            <button className="btn btn-outline-blue">Learn More</button>
+        <section className="p-4 lg:px-16 flex flex-col items-center text-center">
+            <h2 className="heading">Latest <span className="font-bold px-2 bg-blue-200 text-blue-800">Project</span></h2>
+            <div className="flex flex-wrap text-left">
+                <div className="w-full lg:w-6/12 order-1 lg:order-2">
+                    <img className="w-full" src="/images/utsav.jpg"/>
+                </div>
+                <div className="w-full lg:w-6/12 order-2 lg:order-1">
+                    <h3 className="heading2 py-1 ">Utsav Residential</h3>
+                    <hr style={{height: "2px"}} className="w-full lg:w-4/12 bg-blue-500"/>
+                    <p className="py-6">
+                        Utsav Residential, is a proposed modern integrated township located at Medical More, near North Point residential boarding school, opposite SSB Camp, Ranidanga. 
+                        Buzzing with development activities, the plots on offer in Utsav Residential are in various sizes of <b>115 to 1000 sq yard</b>, enabling you to build a house the way you desire.<br/>
+                        <br/>
+                        Utsav Residential, enjoys proximity to the NJP Railway Station, Bagdogra Airport, North Bengal Medical College, Neotia Nursig home and North Bengal University. 
+                        It is at a stones throw distance from City Center Shopping Mall, making it a very attractive destination.
+                    </p>
+                    <span className="inline-block">
+                    <Link href="/utsav-residential" passHref>
+                        <div className="btn btn-outline-blue flex justify-center pointeronhover items-center">
+                            <span className="transformIcon">
+                                <FaArrowRight/>
+                            </span>
+                            <span className="mx-2">                
+                                Know More
+                            </span> 
+                            <span className="extraSpan"></span>
+                        </div>
+                    </Link>
+                    </span>
+                </div>
+            </div>
         </section>
     );
 }
