@@ -1,8 +1,18 @@
 import Link from "next/link"
-import {FaPhoneAlt, FaEnvelope} from "react-icons/fa"
+import {FaPhoneAlt, FaEnvelope, FaWhatsapp} from "react-icons/fa"
 function Footer() {
     return (
         <footer className="bg-gray-800 p-4 lg:px-16 text-white ">
+            <div className="p-4 fixed bottom-20 text-white bg-blue-500 hover:bg-blue-800 right-5 text-xl flex justify-center items-center shadow-xl" style={{width:'50px', height:'50px', borderRadius: "50%",padding:"10px", zIndex: 1000}}>
+                <a href='tel:+918967379419'>
+                    <FaPhoneAlt size="30px"/>
+                </a>
+            </div>
+            <div className="p-4 fixed bottom-5 text-white bg-green-500 hover:bg-green-800 right-5 text-xl flex justify-center items-center shadow-xl" style={{width:'50px', height:'50px', borderRadius: "50%",padding:"10px", zIndex: 1000}}>
+                <a href='https://wa.me/+918145321652' target='_blank'>
+                    <FaWhatsapp size="30px"/>
+                </a>
+            </div>
             <div className="flex justify-between flex-wrap">
                 <div className="w-full md:w-6/12">
                     <h6 className="font-bold text-2xl">Contact Us</h6>
