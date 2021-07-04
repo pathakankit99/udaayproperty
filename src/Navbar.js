@@ -59,7 +59,7 @@ function Navbar({active}) {
                 </Link>
             </div>
         </nav>
-        <nav className="adminNavbar bg-white flex lg:hidden justify-between items-center p-4">
+        <nav className="adminNavbar shadow-xl bg-white flex lg:hidden justify-between items-center p-4">
             <div className="text-4xl">
                 <FaBars  onClick={()=>setCount(count+1)}/>
             </div>

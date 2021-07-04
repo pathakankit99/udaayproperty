@@ -29,7 +29,7 @@ export default function ProjectMenu() {
             <div className="px-1 py-1 ">
               <Menu.Item>
                <li className="text-sm text-gray-800 font-normal p-2 hover:bg-gray-200">
-                 <Link href="/">Utsav Residential</Link>
+                 <Link href="/utsav-residential">Utsav Residential</Link>
                </li>
               </Menu.Item>
               <Menu.Item>
