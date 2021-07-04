@@ -23,7 +23,7 @@ function Navbar({active}) {
     }, [count])
     return (
         <>
-        <nav className="w-full hidden lg:flex p-4 lg:px-16 bg-gray-100 justify-between items-center">
+        <nav className="w-full hidden lg:flex p-4 lg:px-16 justify-between items-center">
             <div className="logo">
                 <Image width={40} height={70} src={logo}/>
             </div>
