@@ -4,6 +4,7 @@ import Footer from "../src/Footer"
 import Section1 from '../src/utsav-residential/Section1'
 import Section2 from '../src/utsav-residential/Section2'
 import Section3 from '../src/utsav-residential/Section3'
+import Section4 from '../src/utsav-residential/Section4'
 function utsavResidential() {
     return (
         <div>
@@ -17,6 +18,7 @@ function utsavResidential() {
                 <Section1/>
                 <Section2/>
                 <Section3/>
+                <Section4/>
             </main>    
             <Footer/>
         </div>

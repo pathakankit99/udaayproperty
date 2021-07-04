@@ -25,7 +25,7 @@ function Navbar({active}) {
         <>
         <nav className="w-full hidden lg:flex p-4 lg:px-16 bg-gray-100 justify-between items-center">
             <div className="logo">
-                <Image width={70} height={70} src={logo}/>
+                <Image width={40} height={70} src={logo}/>
             </div>
             <div className="flex justify-center">
                 <ul className=" flex justify-evenly">
@@ -64,7 +64,7 @@ function Navbar({active}) {
                 <FaBars  onClick={()=>setCount(count+1)}/>
             </div>
             <div className="logo">
-                <Image width={70} height={70} src={logo}/>
+                <Image width={40} height={70} src={logo}/>
             </div>
         </nav>
         <div style={style} onClick={()=>setCount(count+1)} className="overlay">
