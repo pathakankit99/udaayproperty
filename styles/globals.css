@@ -206,3 +206,10 @@ textarea{
   padding-left: 10px;
   padding-right: 10px;
 }
+
+/* Demo */
+@media (max-width: 550px){
+  .demoSection2 .card{
+    height: 60vh;
+  }
+}
